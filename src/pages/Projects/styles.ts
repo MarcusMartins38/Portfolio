@@ -11,6 +11,7 @@ export const Container = styled.div`
 export const ContentDiv = styled.div`
   width: 90%;
   margin-top: 4em;
+  margin-bottom: 3em;
   padding: 1.2em 2em;
 
   border-radius: 24px;

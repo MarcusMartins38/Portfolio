@@ -1,4 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 import { Container, ContentDiv, Content } from "./styles";
 import { FiGithub } from "react-icons/fi";
 
@@ -6,11 +9,15 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 
 const Projects: React.FC = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
     <>
       <Header />
       <Container>
-        <ContentDiv>
+        <ContentDiv data-aos="fade-right">
           <div id="header_div">
             <h1>Go Barber</h1>
             <a href="https://github.com/MarcusMartins38/GoBarberApplication">
@@ -41,7 +48,7 @@ const Projects: React.FC = () => {
           </Content>
         </ContentDiv>
 
-        <ContentDiv>
+        <ContentDiv data-aos="fade-left">
           <div id="header_div">
             <h1>Ecoleta</h1>
             <a href="https://github.com/MarcusMartins38/SistemaDeColeta-NLW01">
@@ -70,7 +77,7 @@ const Projects: React.FC = () => {
           </Content>
         </ContentDiv>
 
-        <ContentDiv>
+        <ContentDiv data-aos="fade-right">
           <div id="header_div">
             <h1>Volunteer</h1>
             <a href="https://github.com/MarcusMartins38/AloneStudyingOfReact">
