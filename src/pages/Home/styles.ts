@@ -1,4 +1,26 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const appearFromLeft = keyframes`
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+`;
+
+const appearFromRigth = keyframes`
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+`;
 
 export const HeadContainer = styled.div`
   background-color: #222222;
@@ -43,6 +65,10 @@ export const DivAnimation = styled.div`
   padding-top: 100px;
   max-width: 1100px;
   margin: 0 auto;
+
+  #middle {
+    animation: ${appearFromLeft} 2s;
+  }
 `;
 
 export const CardImage = styled.div`
@@ -50,10 +76,16 @@ export const CardImage = styled.div`
     border-radius: 30px;
     width: 450px;
     height: 266px;
+    animation: ${appearFromLeft} 2s;
+
+    p + & {
+      animation: ${appearFromRigth} 2s;
+    }
   }
 `;
 
 export const Description = styled.p`
   margin: 0 36px;
   font-size: 18px;
+  animation: ${appearFromRigth} 2s;
 `;

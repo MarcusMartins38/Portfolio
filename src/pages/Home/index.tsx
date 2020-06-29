@@ -14,6 +14,7 @@ import {
 } from "./styles";
 
 import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
 const Home: React.FC = () => {
   return (
@@ -38,7 +39,7 @@ const Home: React.FC = () => {
         </DivAnimation>
 
         <DivAnimation>
-          <Description>
+          <Description id="middle">
             Fiz dos mais diversos cursos no Alura (2019 - 2020), para conhecer
             sobre diversas ferramentas, Ex: MySQL, Java e uma formação Front-end
             (HTML, CSS, Javascript, JQuery, ECMASCRIPT 6).
@@ -60,6 +61,7 @@ const Home: React.FC = () => {
           </Description>
         </DivAnimation>
       </Content>
+      <Footer />
     </>
   );
 };

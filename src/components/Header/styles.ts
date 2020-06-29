@@ -7,6 +7,9 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
+  border-spacing: 0;
+  position: fixed;
+  z-index: 1;
 
   background-color: #151415;
 `;
