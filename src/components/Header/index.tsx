@@ -8,8 +8,8 @@ const Header: React.FC = () => {
     <Container>
       <Content>
         <Link to="/">Home</Link>
-        <Link to="/projects">Projetos</Link>
-        <Link to="/qualifications">Qualificações</Link>
+        <Link to="/projects">Projects</Link>
+        <Link to="/qualifications">Qualifications</Link>
       </Content>
     </Container>
   );

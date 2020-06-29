@@ -42,16 +42,18 @@ const Home: React.FC = () => {
               <img src={unir} alt="unir" />
             </CardImage>
             <Description data-aos="fade-left">
-              Estudante de Ciencia da Computação na Fundação Universidade
-              Federal de Rondônia (2018 - 2023).
+              Studante of Computer Science in Fundation University Federal of
+              Rondônia (2018 - 2023). This is the begining of a serious life of
+              developer, I started to programming before this, but this is when
+              I take it serious
             </Description>
           </DivAnimation>
 
           <DivAnimation>
             <Description data-aos="fade-right">
-              Fiz dos mais diversos cursos no Alura (2019 - 2020), para conhecer
-              sobre diversas ferramentas, Ex: MySQL, Java e uma formação
-              Front-end (HTML, CSS, Javascript, JQuery, ECMASCRIPT 6).
+              I studied many things in Alura (2019 - 2020), to know about
+              various tools, Example: MySQL, Java and a Front-end training
+              (HTML, CSS, Javascript, JQuery, ECMASCRIPT 6).
             </Description>
 
             <CardImage data-aos="fade-left">
@@ -64,9 +66,9 @@ const Home: React.FC = () => {
               <img src={rocketseat} alt="rocketseat" />
             </CardImage>
             <Description data-aos="fade-left">
-              Participei do Bootcamp da Rocketseat (2020), na turma GoStack 11.
-              Assim, conhecendo e fortalecendo meu aprendizado com ReactJS,
-              React Native e NodeJS
+              I participated in Rocketseat's Bootcamp (2020), in the GoStack 11
+              class. Thus, I improved my knowledge in ReactJS, React Native and
+              NodeJS.
             </Description>
           </DivAnimation>
         </Content>
