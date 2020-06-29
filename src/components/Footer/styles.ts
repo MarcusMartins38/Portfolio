@@ -1,14 +1,15 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  width: 100%;
+  min-width: 720px;
   bottom: 0;
   background-color: #151415;
-  height: 100px;
+  height: 200px;
   display: flex;
-  justify-items: center;
   justify-content: center;
   align-items: center;
-  margin-top: 64px;
+  margin-top: 72px;
 
   a {
     margin: 0 24px;

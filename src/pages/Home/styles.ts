@@ -22,13 +22,17 @@ const appearFromRigth = keyframes`
   }
 `;
 
+export const Container = styled.div`
+  margin-top: 4em;
+`;
+
 export const HeadContainer = styled.div`
   background-color: #222222;
   width: 100%;
 
   #Background_Image {
     flex: 1;
-    width: 100%;
+    min-width: 100%;
     height: 400px;
     display: block;
   }
@@ -44,14 +48,15 @@ export const HeadContainer = styled.div`
   }
 
   div {
-    max-width: 400px;
-    margin-top: 50px;
-    margin-left: 400px;
+    width: 400px;
+    margin-top: 100px;
+    margin-left: 24em;
   }
 `;
 
 export const Content = styled.div`
-  max-width: 1200px;
+  /* max-width: 1200px; */
+  width: 100%;
   margin-top: 40px;
   display: flex;
   flex-direction: column;
@@ -70,27 +75,27 @@ export const DivAnimation = styled.div`
 export const CardImage = styled.div`
   img {
     border-radius: 30px;
-    width: 450px;
+    max-width: 450px;
     height: 266px;
   }
 
-  &:nth-child(odd) {
+  /* &:nth-child(odd) {
     animation: ${appearFromLeft} 3s;
   }
 
   &:nth-child(even) {
     animation: ${appearFromRigth} 3s;
-  }
+  } */
 `;
 
 export const Description = styled.div`
   margin: 0 36px;
   font-size: 18px;
 
-  &:nth-of-type(odd) {
+  /* &:nth-of-type(odd) {
     animation: ${appearFromLeft} 3s;
   }
   &:nth-of-type(even) {
     animation: ${appearFromRigth} 3s;
-  }
+  } */
 `;
