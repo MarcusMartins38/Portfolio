@@ -2,14 +2,21 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   margin-top: 4em;
+  width: 100%;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (max-width: 800px) {
+    margin-left: 150px;
+  }
 `;
 
 export const ContentDiv = styled.div`
   width: 90%;
+  max-width: 1300px;
+  min-width: 600px;
   margin-top: 4em;
   margin-bottom: 3em;
   padding: 1.2em 2em;
@@ -60,10 +67,10 @@ export const Content = styled.div`
   align-items: center;
 
   #mobile {
-    width: 200px;
+    max-width: 200px;
   }
   img {
-    width: 300px;
+    max-width: 300px;
     height: 400px;
     border-radius: 24px;
 

@@ -8,7 +8,8 @@ export const Container = styled.div`
   height: 200px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
+
   margin-top: 72px;
 
   a {

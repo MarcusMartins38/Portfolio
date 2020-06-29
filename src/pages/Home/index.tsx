@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo } from "react";
+import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -27,8 +27,9 @@ const Home: React.FC = () => {
 
   return (
     <>
-      <Header />
       <Container>
+        <Header />
+
         <HeadContainer>
           <img id="Background_Image" src={backgroundimage} alt="Background" />
           <img id="Profile_Image" src={perfil} alt="Profile" />
@@ -45,7 +46,7 @@ const Home: React.FC = () => {
               Studante of Computer Science in Fundation University Federal of
               Rondônia (2018 - 2023). This is the begining of a serious life of
               developer, I started to programming before this, but this is when
-              I take it serious
+              I take it serious.
             </Description>
           </DivAnimation>
 
@@ -72,8 +73,8 @@ const Home: React.FC = () => {
             </Description>
           </DivAnimation>
         </Content>
+        <Footer />
       </Container>
-      <Footer />
     </>
   );
 };

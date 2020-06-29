@@ -4,7 +4,7 @@ export const Container = styled.div`
   top: 0;
   height: 4em;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   width: 100%;
   border-spacing: 0;
   position: fixed;
@@ -14,6 +14,8 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.div`
+  width: 100%;
+
   a {
     margin-left: 2em;
 

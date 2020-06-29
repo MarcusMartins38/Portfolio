@@ -1,29 +1,9 @@
-import styled, { keyframes } from "styled-components";
-
-const appearFromLeft = keyframes`
-  from {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-`;
-
-const appearFromRigth = keyframes`
-  from {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-`;
+import styled from "styled-components";
 
 export const Container = styled.div`
   margin-top: 4em;
+  display: flex;
+  flex-direction: column;
 `;
 
 export const HeadContainer = styled.div`
@@ -48,18 +28,29 @@ export const HeadContainer = styled.div`
   }
 
   div {
-    width: 400px;
-    margin-top: 100px;
+    max-width: 400px;
     margin-left: 24em;
+    margin-top: 100px;
+
+    p {
+      position: relative;
+    }
   }
 `;
 
 export const Content = styled.div`
-  /* max-width: 1200px; */
+  max-width: 1200px;
   width: 100%;
   margin-top: 40px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+
+  @media (min-width: 900px) {
+    overflow: hidden;
+  }
 `;
 
 export const DivAnimation = styled.div`
@@ -75,27 +66,23 @@ export const DivAnimation = styled.div`
 export const CardImage = styled.div`
   img {
     border-radius: 30px;
-    max-width: 450px;
+    max-width: 250px;
     height: 266px;
   }
-
-  /* &:nth-child(odd) {
-    animation: ${appearFromLeft} 3s;
+  @media (min-width: 900px) {
+    img {
+      border-radius: 30px;
+      max-width: 450px;
+      height: 266px;
+    }
   }
-
-  &:nth-child(even) {
-    animation: ${appearFromRigth} 3s;
-  } */
 `;
 
 export const Description = styled.div`
   margin: 0 36px;
   font-size: 18px;
 
-  /* &:nth-of-type(odd) {
-    animation: ${appearFromLeft} 3s;
+  @media (max-width: 700px) {
+    width: 250px;
   }
-  &:nth-of-type(even) {
-    animation: ${appearFromRigth} 3s;
-  } */
 `;
