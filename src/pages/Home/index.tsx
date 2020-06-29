@@ -39,7 +39,7 @@ const Home: React.FC = () => {
         </DivAnimation>
 
         <DivAnimation>
-          <Description id="middle">
+          <Description>
             Fiz dos mais diversos cursos no Alura (2019 - 2020), para conhecer
             sobre diversas ferramentas, Ex: MySQL, Java e uma formação Front-end
             (HTML, CSS, Javascript, JQuery, ECMASCRIPT 6).

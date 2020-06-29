@@ -65,10 +65,6 @@ export const DivAnimation = styled.div`
   padding-top: 100px;
   max-width: 1100px;
   margin: 0 auto;
-
-  #middle {
-    animation: ${appearFromLeft} 2s;
-  }
 `;
 
 export const CardImage = styled.div`
@@ -76,16 +72,25 @@ export const CardImage = styled.div`
     border-radius: 30px;
     width: 450px;
     height: 266px;
-    animation: ${appearFromLeft} 2s;
+  }
 
-    p + & {
-      animation: ${appearFromRigth} 2s;
-    }
+  &:nth-child(odd) {
+    animation: ${appearFromLeft} 3s;
+  }
+
+  &:nth-child(even) {
+    animation: ${appearFromRigth} 3s;
   }
 `;
 
-export const Description = styled.p`
+export const Description = styled.div`
   margin: 0 36px;
   font-size: 18px;
-  animation: ${appearFromRigth} 2s;
+
+  &:nth-of-type(odd) {
+    animation: ${appearFromLeft} 3s;
+  }
+  &:nth-of-type(even) {
+    animation: ${appearFromRigth} 3s;
+  }
 `;
