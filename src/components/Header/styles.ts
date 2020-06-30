@@ -11,6 +11,7 @@ export const Container = styled.div`
   z-index: 1;
 
   background-color: #151415;
+  border-bottom: 2px solid white;
 `;
 
 export const Content = styled.div`
@@ -23,15 +24,16 @@ export const Content = styled.div`
     font-size: 32px;
     font-weight: 500;
     text-decoration: none;
-    transition: opacity 0.5s;
+    transition: border-bottom 1s, border-top 1s;
+
+    &:hover {
+      border-bottom: 3px solid white;
+      border-top: 4px solid white;
+    }
 
     @media (max-width: 600px) {
       font-size: 16px;
       min-width: 300px;
-    }
-
-    &:hover {
-      opacity: 0.5;
     }
   }
 `;
