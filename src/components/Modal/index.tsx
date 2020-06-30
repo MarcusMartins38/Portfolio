@@ -39,7 +39,7 @@ const Modal: React.FC<IModalProps> = ({ isOpen, setIsOpen, image }) => {
         },
       }}
     >
-      {image && <img src={image} alt="image" />}
+      {image && <img src={image} alt="certificado" />}
     </ReactModal>
   );
 };
