@@ -4,7 +4,7 @@ import ReactModal from "react-modal";
 interface IModalProps {
   isOpen: boolean;
   setIsOpen: () => void;
-  image: string | undefined;
+  image?: string;
 }
 
 const Modal: React.FC<IModalProps> = ({ isOpen, setIsOpen, image }) => {

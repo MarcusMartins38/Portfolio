@@ -19,8 +19,10 @@ const Qualifications: React.FC = () => {
 
   const [info, setInfo] = useState<string>();
 
-  function setData(data: string): void {
-    setInfo(data);
+  function setData(data?: string): void {
+    if (data) {
+      setInfo(data);
+    }
     toggleModal();
   }
 
