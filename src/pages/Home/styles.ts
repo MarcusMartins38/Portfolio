@@ -4,6 +4,7 @@ export const Container = styled.div`
   margin-top: 4em;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 `;
 
 export const HeadContainer = styled.div`
@@ -36,6 +37,14 @@ export const HeadContainer = styled.div`
       position: relative;
     }
   }
+
+  @media (max-width: 600px) {
+    div {
+      margin-left: 4em;
+      margin-top: 120px;
+      width: 300px;
+    }
+  }
 `;
 
 export const Content = styled.div`
@@ -47,10 +56,6 @@ export const Content = styled.div`
   justify-content: center;
   align-items: center;
   justify-items: center;
-
-  @media (min-width: 900px) {
-    overflow: hidden;
-  }
 `;
 
 export const DivAnimation = styled.div`
@@ -61,6 +66,10 @@ export const DivAnimation = styled.div`
   padding-top: 100px;
   max-width: 1100px;
   margin: 0 auto;
+
+  @media (max-width: 600px) {
+    flex-wrap: wrap-reverse;
+  }
 `;
 
 export const CardImage = styled.div`
@@ -69,7 +78,7 @@ export const CardImage = styled.div`
     max-width: 250px;
     height: 266px;
   }
-  @media (min-width: 900px) {
+  @media (min-width: 700px) {
     img {
       border-radius: 30px;
       max-width: 450px;
@@ -82,7 +91,8 @@ export const Description = styled.div`
   margin: 0 36px;
   font-size: 18px;
 
-  @media (max-width: 700px) {
+  @media (max-width: 600px) {
     width: 250px;
+    margin: 8px 0;
   }
 `;

@@ -12,7 +12,7 @@ export const Container = styled.div`
 export const Content = styled.div`
   width: 90%;
   max-width: 1300px;
-  min-width: 600px;
+  min-width: 300px;
   margin-top: 4em;
   margin-bottom: 3em;
   padding: 1.2em 2em;
@@ -52,5 +52,9 @@ export const Content = styled.div`
     font-size: 18px;
     margin-top: 40px;
     margin-bottom: 16px;
+  }
+
+  @media (max-width: 600px) {
+    margin-right: 24px;
   }
 `;

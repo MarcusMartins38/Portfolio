@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  /* min-width: 720px; */
+  min-width: 300px;
   bottom: 0;
   background-color: #151415;
   height: 200px;
@@ -21,7 +21,7 @@ export const Container = styled.div`
     }
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 600px) {
     svg {
       width: 40px;
       height: 40px;

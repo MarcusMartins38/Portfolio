@@ -8,15 +8,13 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
 
-  @media (max-width: 800px) {
-    margin-left: 150px;
-  }
+  overflow: hidden;
 `;
 
 export const ContentDiv = styled.div`
   width: 90%;
   max-width: 1300px;
-  min-width: 600px;
+  min-width: 300px;
   margin-top: 4em;
   margin-bottom: 3em;
   padding: 1.2em 2em;
@@ -59,6 +57,10 @@ export const ContentDiv = styled.div`
       opacity: 0.5;
     }
   }
+
+  @media (max-width: 600px) {
+    margin-right: 24px;
+  }
 `;
 
 export const Content = styled.div`
@@ -83,5 +85,9 @@ export const Content = styled.div`
     max-width: 400px;
     font-size: 20px;
     font-weight: 400;
+  }
+
+  @media (max-width: 600px) {
+    flex-wrap: wrap;
   }
 `;

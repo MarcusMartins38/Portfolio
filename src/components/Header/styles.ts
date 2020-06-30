@@ -25,8 +25,9 @@ export const Content = styled.div`
     text-decoration: none;
     transition: opacity 0.5s;
 
-    @media (max-width: 800px) {
+    @media (max-width: 600px) {
       font-size: 16px;
+      min-width: 300px;
     }
 
     &:hover {
