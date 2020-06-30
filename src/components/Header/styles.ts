@@ -4,7 +4,7 @@ export const Container = styled.div`
   top: 0;
   height: 4em;
   display: flex;
-  align-items: stretch;
+  align-items: center;
   width: 100%;
   border-spacing: 0;
   position: fixed;
@@ -24,6 +24,10 @@ export const Content = styled.div`
     font-weight: 500;
     text-decoration: none;
     transition: opacity 0.5s;
+
+    @media (max-width: 800px) {
+      font-size: 16px;
+    }
 
     &:hover {
       opacity: 0.5;
