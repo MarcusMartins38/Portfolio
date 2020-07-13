@@ -17,6 +17,7 @@ const Modal: React.FC<IModalProps> = ({ isOpen, setIsOpen, image }) => {
   return (
     <ReactModal
       shouldCloseOnOverlayClick={!false}
+      shouldCloseOnEsc={true}
       onRequestClose={setIsOpen}
       isOpen={modalStatus}
       ariaHideApp={false}
@@ -31,7 +32,7 @@ const Modal: React.FC<IModalProps> = ({ isOpen, setIsOpen, image }) => {
           background: "transparent",
           color: "#000000",
           borderRadius: "8px",
-          width: "1000px",
+          maxWidth: "1000px",
           border: "none",
         },
         overlay: {

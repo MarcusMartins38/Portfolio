@@ -14,6 +14,8 @@ import IntroSql from "../../assets/Certificacoes/CertIntroSql.png";
 import AvanSql from "../../assets/Certificacoes/CertAvanSql.png";
 import SqlDml from "../../assets/Certificacoes/CertSqlDml.png";
 
+import RocketSeat from "../../assets/Certificacoes/Rocketseat.png";
+
 const Qualifications: React.FC = () => {
   const [modalOpen, setModalOpen] = useState(false);
 
@@ -34,6 +36,12 @@ const Qualifications: React.FC = () => {
     <>
       <Header />
       <Container>
+        <Content>
+          <h1>Certification FullStack Rocketseat</h1>
+          <p>ReactJS, NodeJS, React Native com o uso de Typescript</p>
+          <button onClick={() => setData(RocketSeat)}>Ver Certificado</button>
+        </Content>
+
         <Content>
           <h1>Certification Front-End Alura</h1>
           <p>Front-End</p>

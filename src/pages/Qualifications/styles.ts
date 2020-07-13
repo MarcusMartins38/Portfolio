@@ -21,7 +21,20 @@ export const Content = styled.div`
   background-color: #151415;
   border-bottom: 8px solid white;
 
-  &:nth-child(-n + 2) {
+  button {
+    padding: 8px;
+    border-radius: 16px;
+    transition: padding 0.5s, opacity 0.5s;
+    border: 0;
+
+    &:hover {
+      padding: 6px;
+      opacity: 0.8;
+      cursor: pointer;
+    }
+  }
+
+  &:nth-child(-n + 3) {
     border-bottom: 8px solid #12b2e2;
 
     h1 {
@@ -30,16 +43,18 @@ export const Content = styled.div`
 
     button {
       background-color: #12b2e2;
-      padding: 8px;
-      border-radius: 16px;
-      transition: padding 0.5s, opacity 0.5s;
-      border: 0;
+    }
+  }
 
-      &:hover {
-        padding: 6px;
-        opacity: 0.8;
-        cursor: pointer;
-      }
+  &:nth-child(1) {
+    border-bottom: 8px solid #4328f6;
+
+    h1 {
+      border-bottom: 2px solid #4328f6;
+    }
+
+    button {
+      background-color: #4328f6;
     }
   }
 
