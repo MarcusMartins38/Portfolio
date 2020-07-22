@@ -15,6 +15,7 @@ import AvanSql from "../../assets/Certificacoes/CertAvanSql.png";
 import SqlDml from "../../assets/Certificacoes/CertSqlDml.png";
 
 import RocketSeat from "../../assets/Certificacoes/Rocketseat.png";
+import RocketseatAtualizado from "../../assets/Certificacoes/RocketseatAtualizado.png";
 
 const Qualifications: React.FC = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -39,27 +40,30 @@ const Qualifications: React.FC = () => {
         <Content>
           <h1>Certification FullStack Rocketseat</h1>
           <p>ReactJS, NodeJS, React Native com o uso de Typescript</p>
-          <button onClick={() => setData(RocketSeat)}>Ver Certificado</button>
+          <button onClick={() => setData(RocketSeat)}>View certificate</button>
+          <button onClick={() => setData(RocketseatAtualizado)}>
+            View certificate Updated
+          </button>
         </Content>
 
         <Content>
           <h1>Certification Front-End Alura</h1>
           <p>Front-End</p>
-          <button onClick={() => setData(FrontEnd)}>Ver Certificado</button>
+          <button onClick={() => setData(FrontEnd)}>View certificate</button>
           <p>HTML5/CSS3</p>
-          <button onClick={() => setData(HtmlCss)}>Ver Certificado</button>
+          <button onClick={() => setData(HtmlCss)}>View certificate</button>
           <p>Javascript</p>
-          <button onClick={() => setData(Javascript)}>Ver Certificado</button>
+          <button onClick={() => setData(Javascript)}>View certificate</button>
         </Content>
 
         <Content>
           <h1>Certification SQL Alura</h1>
           <p>Introdução ao SQL com MySQL</p>
-          <button onClick={() => setData(IntroSql)}>Ver Certificado</button>
+          <button onClick={() => setData(IntroSql)}>View certificate</button>
           <p>Avançando no MySQL</p>
-          <button onClick={() => setData(AvanSql)}>Ver Certificado</button>
+          <button onClick={() => setData(AvanSql)}>View certificate</button>
           <p>Comandos DML</p>
-          <button onClick={() => setData(SqlDml)}>Ver Certificado</button>
+          <button onClick={() => setData(SqlDml)}>View certificate</button>
         </Content>
 
         <Modal isOpen={modalOpen} setIsOpen={toggleModal} image={info} />
