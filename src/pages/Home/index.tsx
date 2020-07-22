@@ -43,8 +43,8 @@ const Home: React.FC = () => {
               <img src={unir} alt="unir" />
             </CardImage>
             <Description data-aos="fade-left">
-              Studante of Computer Science in Fundation University Federal of
-              Rondônia (2018 - 2023). This is the begining of a serious life of
+              Student of Computer Science in Foundation University Federal of
+              Rondônia (2018 - 2023). This is the beginning of a serious life of
               developer, I started to programming before this, but this is when
               I take it serious.
             </Description>
