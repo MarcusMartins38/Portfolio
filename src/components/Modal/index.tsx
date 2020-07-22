@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import ReactModal from "react-modal";
 
+import "./styles.css";
+
 interface IModalProps {
   isOpen: boolean;
   setIsOpen: () => void;
@@ -16,6 +18,7 @@ const Modal: React.FC<IModalProps> = ({ isOpen, setIsOpen, image }) => {
 
   return (
     <ReactModal
+      className="modal"
       shouldCloseOnOverlayClick={!false}
       shouldCloseOnEsc={true}
       onRequestClose={setIsOpen}
